@@ -1,0 +1,134 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<!-- Mirrored from www.pokermuck.com/index.php?title=Hold%27em_Advanced_Statistics&oldid=165 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Jul 2016 22:43:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="MediaWiki 1.18.0" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="shortcut icon" href="http://www.pokermuck.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.pokermuck.com/opensearch_desc.php" title="PokerMuck (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://www.pokermuck.com/api.php?action=rsd" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="PokerMuck Atom feed" href="http://www.pokermuck.com/index.php?title=Special:RecentChanges&amp;feed=atom" /><title>Hold'em Advanced Statistics - PokerMuck</title>
+
+<!--[if lt IE 7]><script src="/skins/clean/ie7/ie7-standard-p.js" type="text/javascript"></script><![endif]-->
+
+<style type="text/css" media="screen, projection"> @import "http://www.pokermuck.com/skins/clean/main.css"; </style>
+
+<script type="text/javascript" src="http://www.pokermuck.com/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=clean"></script><script type="text/javascript" src="http://www.pokermuck.com/skins/common/wikibits.js"></script>
+
+<style type="text/css"></style>
+
+<script type="text/javascript" src="http://www.pokermuck.com/skins/clean/browser.detect.js"></script>
+<script type="text/javascript" src="http://www.pokermuck.com/skins/clean/fadomatic.js"></script>
+<script type="text/javascript" src="http://www.pokermuck.com/skins/clean/functions.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	if (is_win) {
+		document.write("<style type='text/css' media='screen, projection'> @import 'http://www.pokermuck.com/skins/clean/main.win.css';</style>");
+	}
+</script>
+
+<style type="text/css">
+.editsection { display: none; visibility: hidden; }
+</style>
+
+<table cellpadding="0" cellspacing="0" border="0" summary="" id="bodyTable">
+<tr valign="top">
+<td id="leftDiv" nowrap width="20"></td>
+<td id="middleDiv" valign="top">
+
+<div id="bodyDiv">
+
+<div id="topBackground">
+<div id="siteLogoDiv">
+<a href="http://www.pokermuck.com/index.php/Main_Page"><img src="http://www.pokermuck.com/skins/clean/PokerMuck-Logo.png" border="0"></a>
+</div>
+<div id="loginText"><a href='http://www.pokermuck.com/index.php/Special:Userlogin'>log in / create account</a></div>
+</div>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" id="menuTable">
+<tr valign="center">
+<td class="menuItem" onmouseover="showMenu('mainMenu', 'homeLink', 'left');" nowrap><a href="http://www.pokermuck.com/index.php/Main_Page" id="homeLink">wiki</a></td>
+<td class="menuItem" nowrap></td>
+<td nowrap width="100%"></td>
+<td class="menuItem" nowrap>search</td>
+<td class="menuItem" nowrap><form id="searchForm" name="searchForm" action="http://www.pokermuck.com/index.php/Special:Search"><input id="searchField" name="search" type="text" autosave="wiki" results="20" accesskey="f" value="" /></form></td>
+</tr>
+</table>
+
+<div id="mainMenu" style="display:none;visibility:hidden">
+<div class="mainMenuItem"><a href='http://www.pokermuck.com/index.php/Special:Allpages'>all pages</a></div>
+</div>
+
+<div id="editMiniMenu" style="display:none;visibility:hidden">
+<div class="editMiniItem"><a href='http://www.pokermuck.com/index.php?title=Hold%27em_Advanced_Statistics&amp;action=history'>changes</a></div>
+<div class="editMiniItem"><a href='http://www.pokermuck.com/index.php/Special:RecentChangesLinked/Hold%27em_Advanced_Statistics'>related changes</a></div>
+</div>
+
+<div id="pageHeader">
+
+<div id="editMenu">
+</div>
+
+<div id="pageTitle"><a href='http://www.pokermuck.com/index.php/Hold%27em_Advanced_Statistics'>Hold'em Advanced Statistics</a></div>
+
+</div>
+
+<div id="bodyContent">
+<!-- start content -->
+<div id='emptyDiv'></div>
+<div lang="en" dir="ltr" class="mw-content-ltr"><p>Whenever it's time to make a choice, looking at some statistics can help us make that choice. But you need to understand what the statistics mean before you can do that.
+</p>
+<ul><li> <b>Total hands played</b>: the number of hands that we have at our disposal to make our statistics.
+</li><li> <b>Won at Showdown</b>: the percentage of times that a user as gone to showdown and won the hand (side pots count as winners)
+</li><li> <b>Style</b>: based on the action preflop tries to describe the player as loose passive, loose aggressive, semi-loose aggressive, semi-loose passive, tight aggressive or tight passive.
+</li><li> <b>Aggression Frequency</b>: a value between 0 and 1 that tries to display the level of aggressiveness of a player. This value is computed by taking the sum of the total number of raises and total number of bets divided by the total number of actions (raises, bets, checks, calls, folds). It shows how often a person is raising and betting instead of checking, calling or folding. The higher the value, the more aggressive a player is.  
+</li><li> <b>Pushed all-in</b>: the percentage of hands that a player has pushed all-in (in any phase of a hand)
+</li><li> <b>Raises, Bets, Folds, Calls, Checks, Check Call, Check Raise, Check Fold</b>: the percentage of times that a player has done a certain action. The values presented in the Summary tab is the average of all phases.
+</li><li> <b>Voluntary Put $</b>: shows the percentage of total hands that a player has played preflop (not including the times where the person is the big blind and doesn't cost him anything to see a flop). It's a great indicator to see how loose or tight is a player. If somebody with a low VPF value raises, you can be pretty sure that he's not limping with a weak hand. 
+</li><li> <b>Limp</b>: shows the percentage of hands that a player has simply limped (called) the big blind amount to see a flop. 
+</li><li> <b>Steal raises</b>: the percentage of hands that a player raised when he had the chance to steal raise (a steal raise is a raise from the button when everybody else has folded).
+</li><li> <b>Fold big/small blind to a steal raise</b>: indicates how often has a player folded his blind to a raise coming from the button.
+</li><li> <b>Fold big/small blind to a raise</b>: indicates how often has a player folded his blind to a raise (coming from any player).
+</li><li> <b>Raise starting hands</b>: displays a list of hands that a player has raised preflop with. This list is also used to compute the pushing range when right clicking a player's HUD window and selecting the "Display Preflop Raising Range" button.
+</li><li> <b>All-in hands</b>: list of hands that a player pushed all-in with.
+</li><li> <b>Call/limp starting hands</b>: list of hands that a player called or limped with preflop.
+</li><li> <b>Continuation bets</b>: the percentage of times that a player has raised preflop and when everybody checked on him, he made a bet.
+</li><li> <b>Folds to a continuation bet</b>: the percentage of times that a player called a raise preflop and check folded to a continuation bet.
+</li><li> <b>On a straight/flush draw</b>: shows the most common action that a user has done when on a flush or straight draw (open ended and inside) or both. Rolling over the statistic shows the exact distribution.
+</li></ul>
+<p>You must keep in mind that some of these statistics rely on knowing what the player's cards are. Since most of the times we do not know the cards of the player (because he might have folded before showdown), you have to be careful when interpreting these statistics. See the <a href="http://www.pokermuck.com/index.php/Hand_Rating_in_Poker_Muck" title="Hand Rating in Poker Muck">Hand Rating in Poker Muck</a> page for more information on this issue.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+</div><div class="printfooter">
+Retrieved from "<a href="http://www.pokermuck.com/index.php?title=Hold%27em_Advanced_Statistics&amp;oldid=165">http://www.pokermuck.com/index.php?title=Hold%27em_Advanced_Statistics&amp;oldid=165</a>"</div>
+<div id="catlinks"><div id='catlinks' class='catlinks catlinks-allhidden'></div></div><div id='lastmod'>
+</div>
+<!-- end content -->
+</div>
+				<center><a href="http://www.mediawiki.org/"><img src="http://www.pokermuck.com/skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></center>
+</div>
+
+</td>
+<td id="rightDiv" nowrap width="20"></td>
+</tr>
+</table>
+
+</body>
+
+<!-- Mirrored from www.pokermuck.com/index.php?title=Hold%27em_Advanced_Statistics&oldid=165 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Jul 2016 22:43:07 GMT -->
+</html>
+

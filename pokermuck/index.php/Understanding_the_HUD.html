@@ -1,0 +1,148 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<!-- Mirrored from www.pokermuck.com/index.php/Understanding_the_HUD by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Jul 2016 22:42:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="MediaWiki 1.18.0" />
+<link rel="shortcut icon" href="../favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="PokerMuck (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="../api251f.php?action=rsd" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="PokerMuck Atom feed" href="../index890f.php?title=Special:RecentChanges&amp;feed=atom" /><title>Understanding the HUD - PokerMuck</title>
+
+<!--[if lt IE 7]><script src="/skins/clean/ie7/ie7-standard-p.js" type="text/javascript"></script><![endif]-->
+
+<style type="text/css" media="screen, projection"> @import "../skins/clean/main.css"; </style>
+
+<script type="text/javascript" src="../index2912.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=clean"></script><script type="text/javascript" src="../skins/common/wikibits.js"></script>
+
+<style type="text/css"></style>
+
+<script type="text/javascript" src="../skins/clean/browser.detect.js"></script>
+<script type="text/javascript" src="../skins/clean/fadomatic.js"></script>
+<script type="text/javascript" src="../skins/clean/functions.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	if (is_win) {
+		document.write("<style type='text/css' media='screen, projection'> @import '../skins/clean/main.win.css';</style>");
+	}
+</script>
+
+<style type="text/css">
+.editsection { display: none; visibility: hidden; }
+</style>
+
+<table cellpadding="0" cellspacing="0" border="0" summary="" id="bodyTable">
+<tr valign="top">
+<td id="leftDiv" nowrap width="20"></td>
+<td id="middleDiv" valign="top">
+
+<div id="bodyDiv">
+
+<div id="topBackground">
+<div id="siteLogoDiv">
+<a href="Main_Page.html"><img src="../skins/clean/PokerMuck-Logo.png" border="0"></a>
+</div>
+<div id="loginText"><a href='Special_UserLogin.html'>log in / create account</a></div>
+</div>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" id="menuTable">
+<tr valign="center">
+<td class="menuItem" onmouseover="showMenu('mainMenu', 'homeLink', 'left');" nowrap><a href="Main_Page.html" id="homeLink">wiki</a></td>
+<td class="menuItem" nowrap></td>
+<td nowrap width="100%"></td>
+<td class="menuItem" nowrap>search</td>
+<td class="menuItem" nowrap><form id="searchForm" name="searchForm" action="http://www.pokermuck.com/index.php/Special:Search"><input id="searchField" name="search" type="text" autosave="wiki" results="20" accesskey="f" value="" /></form></td>
+</tr>
+</table>
+
+<div id="mainMenu" style="display:none;visibility:hidden">
+<div class="mainMenuItem"><a href='Special_AllPages.html'>all pages</a></div>
+</div>
+
+<div id="editMiniMenu" style="display:none;visibility:hidden">
+<div class="editMiniItem"><a href='../indexfa68.html?title=Understanding_the_HUD&amp;action=history'>changes</a></div>
+<div class="editMiniItem"><a href='Special_RecentChangesLinked/Understanding_the_HUD.html'>related changes</a></div>
+</div>
+
+<div id="pageHeader">
+
+<div id="editMenu">
+</div>
+
+<div id="pageTitle"><a href='Understanding_the_HUD.html'>Understanding the HUD</a></div>
+
+</div>
+
+<div id="bodyContent">
+<!-- start content -->
+<div id='emptyDiv'></div>
+<div lang="en" dir="ltr" class="mw-content-ltr"><p>The HUD (Heads Up Display) is a quick reference window that you can position next to a player's seat while you're playing poker that will give you an overview of that player's style. Double clicking a HUD window will display more advanced statistics about the player.
+</p><p><a href="File_Hud.html" class="image"><img alt="Hud.jpg" src="../images/e/e9/Hud.jpg" width="142" height="53" /></a>
+</p><p>But let's examine what each part of the HUD means:
+</p>
+<h2> <span class="mw-headline" id="Numeric_values"> Numeric values </span></h2>
+<p>The number in the top right corner of the window indicates how many hands the program has analyzed to conclude the statistics. The higher the number, the more accurately the statistics reflect the actual style of the player. With a low number you should take the statistics with extra care, as the information available is limited and the conclusions might be premature.
+</p>
+<ul><li> VPF: Voluntary Put money preFlop is an indicator that shows the percentage of total hands that a player has played preflop (not including the times where the person is the big blind and doesn't cost him anything to see a flop). It's a great indicator to see how loose or tight is a player. If somebody with a low VPF value raises, you can be pretty sure that he's not playing with a weak hand.
+</li></ul>
+<ul><li> PFR: PreFlop Raise shows the percentage of hands that a player has raised preflop. A loose player will have a higher value. We can use this information to estimate the strength of his raises. We shouldn't fear as much a raise from a loose player, as he's more likely to have raised with a mediocre hand. 
+</li></ul>
+<ul><li> L: Limp shows the percentage of hands that a player has simply limped (called) the big blind amount to see a flop.
+</li></ul>
+<ul><li> AF: Aggression Frequency is a value between 0 and 1 that tries to display the level of aggressiveness of a player. This value is computed by taking the sum of the total number of raises and total number of bets divided by the total number of actions (raises, bets, checks, calls, folds). It shows how often a person is raising and betting instead of checking, calling or folding. The higher the value, the more aggressive a player is.
+</li></ul>
+<h2> <span class="mw-headline" id="Icons"> Icons </span></h2>
+<p>Icons try to reflect common conclusions that can be made from looking at certain statistical numbers. Obviously they should be treated carefully and looking at the numbers is always a more accurate analysis that relying on these icons (as they reflect the personal interpretation of the developer).
+</p><p>Whenever no information is available, a question mark is displayed instead of the icon. When information is available but does not match a criteria, the icon is hidden.
+</p>
+<ul><li> Gold icon: if a person is on average folding more than 80% of his blinds (small and big), this icon appears. See the <a href="Steal_the_blinds_from_late_position.html" title="Steal the blinds from late position">Steal the blinds from late position</a> page to learn how to use this indicator.
+</li><li> Shady Person icon: if a person is making steal raises (raises from the button) more than 50% of the times (without counting the times where he doesn't have a chance to steal raise), this icon appears. You should lower your calling requirements if you are in the blinds or re-raise, as there's a higher chance than usual he might be stealing with a mediocre hand.
+</li><li> Telephone icon: if a person is calling more than 40% of the times and check calling more than 66% of the times, it means he's playing passively and you should bet more with your stronger hands (as he's more likely to call your bets).
+</li><li> Anvil icon: a solid player is somebody that bets, raises and check raises his strong hands. If the information is available, PokerMuck shows this icon whenever a player is known to bet, raise and check raise with a strong hand 80% or more of the times. You should treat this information carefully however. See <a href="Hand_Rating_in_Poker_Muck.html" title="Hand Rating in Poker Muck">this page</a> for more information.
+</li><li> Donkey icon: Dan Harrington noted in one of his books that you should expect a player to bluff 1 time in 10. Whenever PokerMuck detects that a player has been betting, raising or check raising with absolutely nothing (high card, no draws) more than 10% of the times, this icon turns on. It tells us that we should expect this player to bluff more than 1 time in 10. It does NOT mean this player is bluffing all the times. Since this statistic involves hand rating information, the same rule of caution noted for the Anvil icon applies.
+</li></ul>
+<h2> <span class="mw-headline" id="Other_Features"> Other Features </span></h2>
+<p>Right-Clicking each HUD window allows you to access other features.
+</p><p><a href="File_Estimated_Preflop_Range.html" class="image"><img alt="Estimated Preflop Range.jpg" src="../images/7/70/Estimated_Preflop_Range.jpg" width="561" height="440" /></a>
+</p>
+<ul><li> Display Preflop Raising Range: this button will open a new window and will display a possible range of hands that a player is likely to raise with preflop. This range is estimated by looking at the previous hands that a player has raised preflop with (and reached showdown so that we could see them).
+</li><li> Reset Player's Statistics: clicking this button will erase any statistic information about the player. This can be useful in tournaments where the blind level highly influences the player's style. Or if you notice a sudden change of strategy from a player, you can reset his statistics to start over.
+</li><li> Reset Everybody's Statistics: same as above, but in this case EVERY player's statistics will be reset.
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key pierotof_pokermuck:pcache:idhash:28-0!*!0!!*!2!* and timestamp 20151205222516 -->
+</div><div class="printfooter">
+Retrieved from "<a href="http://pokermuck.com/index.php?title=Understanding_the_HUD&amp;oldid=168">http://pokermuck.com/index.php?title=Understanding_the_HUD&amp;oldid=168</a>"</div>
+<div id="catlinks"><div id='catlinks' class='catlinks catlinks-allhidden'></div></div><div id='lastmod'>
+</div>
+<!-- end content -->
+</div>
+				<center><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></center>
+</div>
+
+</td>
+<td id="rightDiv" nowrap width="20"></td>
+</tr>
+</table>
+
+</body>
+<!-- Cached 20151205222516 -->
+
+<!-- Mirrored from www.pokermuck.com/index.php/Understanding_the_HUD by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Jul 2016 22:42:10 GMT -->
+</html>
+
